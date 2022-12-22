@@ -1,0 +1,71 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+  "navbarcolour": #FFA343,
+  "commoncolour": #FFC178,
+);
+
+$custom-fontsize: (
+  "commonsize": 18px,
+  "commonheading":96px,
+  "commontext":88px,
+  "hd-heading":64px,
+  "common-pragraph":14px,
+);
+
+$custom-len: (
+  "bannertop": 358px,
+  "bannerleft": 337px,
+  "top-margin-holyday":250px,
+  "top-margin-holyday-text":300px,
+  
+);
+
+
+$spacers:map-merge($spacers, $custom-len);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$font-sizes:map-merge($font-sizes, $custom-fontsize);
+
+$navbar-light-active-color: #C00A98;
+$navbar-light-color: #fff;
+$navbar-light-hover-color: #C00A98;
+$input-bg: transparent;
+$input-border-color: transparent;
+$input-focus-bg:#FFA343;
+$input-placeholder-color: #fff;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+  font-family: Poppins, sans-serif;
+}
+
+.common_ltr_spc{
+  letter-spacing: 6px;
+}
+
+.bg-img{
+  background-image: url(../images/banner.png);
+  background-size: cover;
+}
+
+.hd-heading{
+  width: 496px;
+}
+
+a{
+  text-decoration: none;
+  color: #FFA343;
+}
+
+.holy-day-p-style{
+  line-height: 32px;
+  width: 585px;
+}
+
+
+
+// a:link {
+//   color: red;
+// }
