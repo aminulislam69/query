@@ -19,6 +19,7 @@ $custom-len: (
   "bannerleft": 337px,
   "top-margin-holyday":250px,
   "top-margin-holyday-text":300px,
+  "step-top-pd":559px,
   
 );
 
@@ -39,6 +40,7 @@ $input-placeholder-color: #fff;
 
 body{
   font-family: Poppins, sans-serif;
+  background:#212529;
 }
 
 .common_ltr_spc{
@@ -64,7 +66,23 @@ a{
   width: 585px;
 }
 
+.bg-img-steps{
+  background-image: url(../images/steps.webp);
+  background-size: cover;
+}
 
+.step-hd-width{
+  width: 850px;
+}
+
+.culture-p-style{
+  line-height: 32px;
+  width: 80%;
+}
+
+.culture-heading{
+  width: 100%;
+}
 
 // a:link {
 //   color: red;
